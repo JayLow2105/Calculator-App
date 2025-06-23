@@ -1,1 +1,11 @@
-/*# sourceMappingURL=style.css.map */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main {
+  width: 390px;
+  border: 1px solid #cecece;
+  border-radius: 10px;
+  min-height: 500px;
+}/*# sourceMappingURL=style.css.map */
