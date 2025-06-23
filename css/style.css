@@ -3,9 +3,28 @@ body {
   justify-content: center;
   align-items: center;
 }
-body main {
-  width: 390px;
+body .calc-body {
   border: 1px solid #cecece;
-  border-radius: 10px;
+  border-radius: 15px;
+  padding: 20px;
   min-height: 500px;
+  background: #000;
+}
+body .calc-body .display-screen {
+  display: flex;
+}
+body .calc-body .display-screen input {
+  border: 1px solid #cecece;
+  border-radius: 5px;
+  padding: 5px;
+  background: #e7e4e4;
+}
+body .calc-body .display-screen .clear-btn {
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
+  background: #ff006e;
+  color: white;
 }/*# sourceMappingURL=style.css.map */
