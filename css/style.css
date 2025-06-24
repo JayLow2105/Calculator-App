@@ -2,29 +2,84 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
+  position: relative;
+}
+body img {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
 body .calc-body {
-  border: 1px solid #cecece;
-  border-radius: 15px;
+  border-radius: 20px;
   padding: 20px;
-  min-height: 500px;
-  background: #000;
+  background: #121212;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  position: absolute;
 }
 body .calc-body .display-screen {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
 }
 body .calc-body .display-screen input {
-  border: 1px solid #cecece;
+  width: 100%;
+  padding: 10px;
+  border: none;
   border-radius: 5px;
-  padding: 5px;
-  background: #e7e4e4;
+  font-size: 24px;
+  font-family: "Orbitron", sans-serif;
+  background: #e0e0e0;
+  color: #000;
+  margin-right: 10px;
+}
+body .calc-body .display-screen input:focus-visible {
+  outline: none;
 }
 body .calc-body .display-screen .clear-btn {
-  border: 1px solid #000;
+  padding: 13px 20px;
+  font-size: 20px;
+  font-family: "Orbitron", sans-serif;
+  border: none;
   border-radius: 5px;
-  padding: 5px;
-  padding-right: 10px;
-  padding-left: 10px;
-  background: #ff006e;
+  background-color: #ff006e;
   color: white;
+  transition: background 0.2s ease;
+}
+body .calc-body .display-screen .clear-btn:hover {
+  background: #ff337f;
+}
+body .calc-body .btn-group {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+body .calc-body .btn-group button {
+  padding: 15px 0;
+  font-size: 20px;
+  font-family: "Orbitron", sans-serif;
+  border: none;
+  border-radius: 5px;
+  background-color: #7b2cbf;
+  color: white;
+  transition: background 0.2s ease;
+}
+body .calc-body .btn-group button:hover {
+  background-color: #9a3cef;
+}
+body .calc-body .btn-group .equal-btn {
+  background: #ff006e;
+}
+body .calc-body .btn-group .equal-btn:hover {
+  background: #ff337f;
+}
+body .calc-body .btn-group .special-btn {
+  background-color: #7b2cbf;
 }/*# sourceMappingURL=style.css.map */
