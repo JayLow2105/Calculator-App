@@ -22,6 +22,8 @@ body .calc-body {
   background: #121212;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
   position: absolute;
+  transform: scale(0.8) translateY(-60%);
+  transform-origin: center;
 }
 body .calc-body .display-screen {
   display: flex;
