@@ -10,32 +10,32 @@
         <link rel="stylesheet" href="./css/style.css">   
     </head>
     <body>
-        <img src="./images/space-background.avif">
+        <img src="./images/s-arcade-fever-neon-glow-gaming-vibes-immerse-yourself-golden-era-electrifying-inspired-background-dark-371539246.webp">
         <div class="calc-body">
             <div class="display-screen">
-                <input type="text">
-                <button class="clear-btn">C</button>  
+                <input id="display" readonly>
+                <button class="clear-btn" onclick="clearDisplay()">C</button>  
             </div>
             <div class="btn-group">
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <button class="special-btn">/</button>
+                <button onclick="appendToDisplay('1')">1</button>
+                <button onclick="appendToDisplay('2')">2</button>
+                <button onclick="appendToDisplay('3')">3</button>
+                <button class="special-btn" onclick="appendToDisplay('/')">/</button>
 
-                <button>4</button>
-                <button>5</button>
-                <button>6</button>
-                <button class="special-btn">-</button>
+                <button onclick="appendToDisplay('4')">4</button>
+                <button onclick="appendToDisplay('5')">5</button>
+                <button onclick="appendToDisplay('6')">6</button>
+                <button class="special-btn" onclick="appendToDisplay('-')">-</button>
 
-                <button>7</button>
-                <button>8</button>
-                <button>9</button>
-                <button class="special-btn">+</button>
+                <button onclick="appendToDisplay('7')">7</button>
+                <button onclick="appendToDisplay('8')">8</button>
+                <button onclick="appendToDisplay('9')">9</button>
+                <button class="special-btn" onclick="appendToDisplay('+')">+</button>
 
-                <button>.</button>
-                <button>0</button>
-                <button class="equal-btn">=</button>
-                <button class="special-btn">*</button>
+                <button onclick="appendToDisplay('.')">.</button>
+                <button onclick="appendToDisplay('0')">0</button>
+                <button class="equal-btn" onclick="calculate()">=</button>
+                <button class="special-btn" onclick="appendToDisplay('*')">*</button>
                 </div>
         </div>
         <script src="script.js" defer></script>

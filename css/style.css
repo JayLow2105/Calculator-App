@@ -28,6 +28,8 @@ body .calc-body .display-screen {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
+  font-size: 50px;
+  gap: 10px;
 }
 body .calc-body .display-screen input {
   width: 100%;
